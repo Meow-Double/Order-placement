@@ -96,3 +96,15 @@ exports.scripts = scripts;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 exports.default = parallel(stylesExpended, stylesMinifly, scripts, browsersync, watching);
+
+// -------------------------------------------------------------
+const gulp = require('gulp');
+const deploy = require('gulp-gh-pages');
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});

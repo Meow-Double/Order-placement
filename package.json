@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "axios": "^1.6.1",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "gulp-gh-pages": "^0.5.4"
   }
 }
