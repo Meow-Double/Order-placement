@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+        <section class="order">
+          <div class="container">
+            <div class="order__inner">
+              <div class="order__content">
+                <div class="order__title">Оформление заказа</div>
+                <ul class="breadcrumbs">
+                  <li class="breadcrumbs__item">
+                    <a href="" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a href="" class="breadcrumbs__link">Корзина</a>
+                  </li>
+                  <li class="breadcrumbs__item breadcrumbs--active">
+                    <a class="breadcrumbs__link">Оформление заказа</a>     <!--У активного элемента ссылки нет-->
+                  </li>
+                </ul>
+                <h1 class="order__step-text">01. Контактные данные</h1>
+                
+                <form action="" class="order__form">
+                    <div class="order__offer-regestration">
+                      <a href="" class="order__offer-regestration-link">Уже покупали у нас?</a>
+                      <p class="order__offer-regestration-text">Войдите в личный кабинет, и все ваши данный автоматически заполнятся</p>
+                    </div>
+                    <span class="order__form-text">Имя</span>
+                    <input type="username" class="order__form-input" placeholder="Ваше имя">
+                    <span class="order__form-text">Телефон</span>
+                    <div class="order__form-phone">
+                      <div class="order__form-select">
+                        kod
+                        <ul class="order__form-select-dropdown">
+                          <li class="order__form-select-item order__form-select-item--active" data-phone-country="7"><img src="" alt=""><img src="./img/flag-kazakhstan.svg" alt="" class="order__form-phone-img"></li>
+                          <li class="order__form-select-item" data-phone-country="7"><img src="" alt=""><img src="./img/flag-russia.svg" alt="" class="order__form-phone-img"></li>
+                          <li class="order__form-select-item" data-phone-country="380"><img src="" alt=""><img src="./img/flag-ukraine.svg" alt="" class="order__form-phone-img"></li>
+                          <li class="order__form-select-item" data-phone-country="375"><img src="" alt=""><img src="./img/flag-belarus.svg" alt="" class="order__form-phone-img"></li>
+                        </ul>
+                      </div>
+                      <input type="tel" class="order__form-input order__form-input--phone" value="+7" placeholder="Ваш телефон">
+                    </div>
+                    <span class="order__form-text order__form-text--email">Email</span>
+                    <input type="email" class="order__form-input" placeholder="Ваш Email">
+                    <span class="order__form-text order__form-text--persone" >кол-во персон</span>
+                    <input type="text" class="order__form-input order__form-input--persone" value="1" maxlength="2">
+
+
+
+
+
+                    <!-- <div class="order__offer-regestration">
+                      <a href="" class="order__offer-regestration-link">Уже покупали у нас?</a>
+                      <p class="order__offer-regestration-text">Войдите в личный кабинет, и все ваши данный автоматически заполнятся</p>
+                  </div>
+                  <div for="" class="order__form-item">
+                    <span class="order__form-text">Имя</span>
+                    <input type="username" class="order__form-input">
+                  </div>
+                  <div for="" class="order__form-item">
+                    <span class="order__form-text">Телефон</span>
+                    <input type="tel" class="order__form-input">
+                  </div>
+                  <div for="" class="order__form-item">
+                    <span class="order__form-text order__form-text--email">Email</span>
+                    <input type="email" class="order__form-input">
+                  </div>
+                  <div for="" class="order__form-item">
+                    <span class="order__form-text order__form-text--persone">кол-во персон</span>
+                    <input type="number" class="order__form-input order__form-input--persone">
+                  </div> -->
+
+
+                </form>
+
+                <h2 class="order__step-text">02. Способ доставки</h2>
+
+                <div class="order__delivery">
+                  <div class="order__delivery-buttons">
+                    <div class="order__delivery-button order__delivery-button--active" data-delivery="first">
+                      <h3 class="order__delivery-title">Бесконтактная доставка</h3>
+                      <div class="order__delivery-price">300 ₽</div>
+                      <div class="order__delivery-text">Доставка по Москве в пределах МКАД
+                        Осуществляется: ежедневно с 12:00 до 00:00, Диапозон времени: от 1 до 1.5 часов
+                      </div>
+                    </div>
+                    <div class="order__delivery-button" data-delivery="second">
+                      <h3 class="order__delivery-title">Самовывоз</h3>
+                      <div class="order__delivery-price">0 ₽</div>
+                      <div class="order__delivery-text">Доступен с 12:00 до 00:00 По адресу 
+                        <span class="order__delivery-adress">ул. Улофа Пальме 5с2</span></div>
+                    </div>
+                  </div>
+                  
+                  <form action="" class="order__delivery-form">
+                    <div class="order__delivery-regestration delivery-window">
+                      <span class="order__delivery-regestration-text">Адрес доставки</span>
+                    </div>
+                    <span class="order__delivery-form-text delivery-window">Улица</span>
+                    <input type="text" class="order__delivery-form-input delivery-window">
+                    <span class="order__delivery-form-text order__delivery-form-text--house delivery-window">дом</span>
+                    <input type="text" class="order__delivery-form-input order__delivery-form-input--house delivery-window">
+                    <span class="order__delivery-form-text order__delivery-form-text--apartment delivery-window">квартира</span>
+                    <input type="text" class="order__delivery-form-input order__delivery-form-input--apartment delivery-window">
+                    <span class="order__delivery-form-text">Комментарий к заказу</span>
+                    <textarea name="" id="" class="order__delivery-form-textarea"></textarea>
+                    <!-- <span class="order__form-text"></span>
+                    <input type="tel" class="order__form-input">
+                    <span class="order__form-text order__form-text--email"></span>
+                    <input type="email" class="order__form-input">
+                    <span class="order__form-text order__form-text--persone"></span>
+                    <input type="number" class="order__form-input order__form-input--persone"> -->
+                  </form>
+
+                  <div class="order__step-text">03. Оплата</div>
+
+                  <div class="order__payment">
+                    <ul class="order__payment-cards">
+                      <li class="order__payment-card">
+                        <label class="order__payment-label">
+                          <input type="radio" class="order__payment-input" name="pay-radio">
+                          <span class="order__payment-input-item"></span>
+                          <div class="order__payment-text">
+                            Банковские карты / Электронные деньги / Другое
+                            <div class="order__payment-input-images">
+                              <img src="./img/pay-ico-1.svg" alt="">
+                              <img src="./img/pay-ico-2.svg" alt="">
+                              <img src="./img/pay-ico-3.svg" alt="">
+                              <img src="./img/pay-ico-4.svg" alt="">
+                              <img src="./img/pay-ico-5.svg" alt="">
+                            </div>
+                          </div>
+                          
+                        </label>
+                      </li>
+                      <li class="order__payment-card">
+                        <label class="order__payment-label">
+                          <input type="radio" class="order__payment-input" name="pay-radio">
+                          <span class="order__payment-input-item"></span>
+                          <div class="order__payment-text">
+                            Наличными курьеру
+                          </div>
+                        </label>
+                      </li>
+                      <li class="order__payment-card">
+                        <label class="order__payment-label">
+                          <input type="radio" class="order__payment-input" name="pay-radio">
+                          <span class="order__payment-input-item"></span>
+                          <div class="order__payment-text">
+                            Картой курьеру
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+
+                    <div class="order__payment-button">Подтвердить заказ</div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="order__menu">
+
+                <ul class="order__menu-cards">
+                  <li class="order__menu-card">
+                    <div class="order__menu-card-description">
+                      <img src="./img/product-img-1.jpg" alt="" class="order__menu-card-img">
+                      <h4 class="order__menu-card-title">Хачапури по-аджарски</h4>
+                    </div>
+                    <div class="order__menu-card-info">
+                      <div class="order__menu-card-quantity">
+                        <span class="order__menu-card-num">1</span>
+                        <spa class="order__menu-card-text">шт</spa>
+                      </div>
+                      <div class="order__menu-card-price">425 ₽</div>
+                    </div>
+                  </li>
+                  <!-- second card -->
+                  <li class="order__menu-card">
+                    <div class="order__menu-card-description">
+                      <img src="./img/product-img-2.jpg" alt="" class="order__menu-card-img">
+                      <h4 class="order__menu-card-title">Ланч низкокалорийный</h4>
+                    </div>
+                    <div class="order__menu-card-info">
+                      <div class="order__menu-card-quantity">
+                        <span class="order__menu-card-num">2</span>
+                        <spa class="order__menu-card-text">шт</spa>
+                      </div>
+                      <div class="order__menu-card-price">1050 ₽</div>
+                    </div>
+                  </li>
+                  <!-- Third card -->
+                  <li class="order__menu-card">
+                    <div class="order__menu-card-description">
+                      <img src="./img/product-img-3.jpg" alt="" class="order__menu-card-img">
+                      <h4 class="order__menu-card-title">
+                        Хинкали жаренные
+                        <span class="order__menu-card-subtitle">Из баранины с тархуном</span>
+                      </h4>
+                    </div>
+                    <div class="order__menu-card-info">
+                      <div class="order__menu-card-quantity">
+                        <span class="order__menu-card-num">1</span>
+                        <spa class="order__menu-card-text">шт</spa>
+                      </div>
+                      <div class="order__menu-card-price">690 ₽</div>
+                    </div>
+                  </li>
+                  <!-- Fourth card -->
+                  <li class="order__menu-card">
+                    <div class="order__menu-card-description">
+                      <img src="./img/product-img-4.jpg" alt="" class="order__menu-card-img">
+                      <h4 class="order__menu-card-title">Оджахури из телятины</h4>
+                    </div>
+                    <div class="order__menu-card-info">
+                      <div class="order__menu-card-quantity">
+                        <span class="order__menu-card-num">2</span>
+                        <spa class="order__menu-card-text">шт</spa>
+                      </div>
+                      <div class="order__menu-card-price">355 ₽</div>
+                    </div>
+                  </li>
+                  <!-- Fifthcard -->
+                  <li class="order__menu-card">
+                    <div class="order__menu-card-description">
+                      <img src="./img/product-img-5.jpg" alt="" class="order__menu-card-img">
+                      <h4 class="order__menu-card-title">
+                        Долма
+                        <span class="order__menu-card-subtitle">С бараниной</span>
+                      </h4>
+                    </div>
+                    <div class="order__menu-card-info">
+                      <div class="order__menu-card-quantity">
+                        <span class="order__menu-card-num">2</span>
+                        <spa class="order__menu-card-text">шт</spa>
+                      </div>
+                      <div class="order__menu-card-price">490 ₽</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="order__menu-payment">
+                  <div class="order__menu-payment-text">Итого к оплате:</div>
+                  <div class="order__menu-payment-price">
+                    <span class="order__menu-payment-num">2 580</span>
+                    <span class="order__menu-payment-sign">₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
