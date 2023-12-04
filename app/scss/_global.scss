@@ -1,0 +1,41 @@
+html,
+body {
+	background: radial-gradient(58.66% 100% at 0% 44.76%, rgba(9, 74, 179, 0.40) 0%, rgba(9, 74, 179, 0.00) 85.26%), #0F0F11;
+	color:#fff;
+	font-family: montserrat-m;
+}
+*{
+box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color:inherit;
+	display: inline-block;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.delete{
+	display: none;
+}
+
+
+
+
+
